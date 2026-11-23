@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carreiras Cimento Cauê | Vendedor(a) Comercial</title>
+  <meta name="description" content="Faça parte da equipe comercial da Cimento Cauê. Confira os requisitos, benefícios e envie seu currículo." />
+  
+  <!-- Fontes Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            caue: {
+              navy: '#0F294A',
+              navyDark: '#091A30',
+              red: '#D9381E',
+              redHover: '#B82C16',
+              concrete: '#F4F5F7',
+              slate: '#334155'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .bg-grid-pattern {
+      background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+  </style>
+</head>
+<body class="bg-caue-concrete text-slate-800 antialiased selection:bg-caue-red selection:text-white">
+
+  <!-- Cabeçalho Fixo -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Logotipo Estilizado -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-lg bg-caue-navy flex items-center justify-center relative overflow-hidden shadow-sm">
+          <div class="w-4 h-4 bg-caue-red rotate-45 transform translate-x-1"></div>
+          <div class="w-3 h-6 bg-white/90 -skew-x-12 -ml-1"></div>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-display font-extrabold text-xl tracking-tight text-caue-navy leading-none">
+            CIMENTO <span class="text-caue-red">CAUÊ</span>
+          </span>
+          <span class="text-[11px] font-semibold uppercase tracking-widest text-slate-500 mt-1">
+            Portal de Carreiras
+          </span>
+        </div>
+      </a>
+
+      <!-- Navegação Desktop -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <a href="#atribuicoes" class="hover:text-caue-navy transition-colors">A Vaga</a>
+        <a href="#requisitos" class="hover:text-caue-navy transition-colors">Requisitos</a>
+        <a href="#beneficios" class="hover:text-caue-navy transition-colors">Benefícios</a>
+        <a href="#candidatura" class="bg-caue-red hover:bg-caue-redHover text-white font-semibold px-5 py-2.5 rounded-lg transition-all shadow-sm">
+          Candidatar-se
+        </a>
+      </nav>
+
+      <!-- Botão Menu Mobile -->
+      <button id="mobile-menu-btn" aria-label="Abrir menu" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-5 space-y-3">
+      <a href="#atribuicoes" class="block py-2 text-sm font-medium text-slate-700 hover:text-caue-red">A Vaga</a>
+      <a href="#requisitos" class="block py-2 text-sm font-medium text-slate-700 hover:text-caue-red">Requisitos</a>
+      <a href="#beneficios" class="block py-2 text-sm font-medium text-slate-700 hover:text-caue-red">Benefícios</a>
+      <a href="#candidatura" class="block text-center bg-caue-red text-white font-semibold py-2.5 rounded-lg text-sm">
+        Candidatar-se Agora
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-caue-navy bg-grid-pattern text-white py-16 lg:py-24 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-caue-navyDark/90 via-caue-navy/85 to-caue-navy/95"></div>
+    
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        <!-- Texto Principal -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-caue-red/20 border border-caue-red/40 text-red-200 text-xs font-semibold uppercase tracking-wider">
+            <span class="w-2 h-2 rounded-full bg-caue-red animate-pulse"></span>
+            Contratação Imediata • Efetivo CLT
+          </div>
+          
+          <h1 class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl leading-tight">
+            Vendedor(a) Comercial <br class="hidden sm:inline" />
+            <span class="text-slate-300 font-bold text-2xl sm:text-3xl lg:text-4xl">Construção Civil & Varejo</span>
+          </h1>
+          
+          <p class="text-slate-300 text-base sm:text-lg max-w-2xl leading-relaxed">
+            Construa uma carreira sólida em uma das marcas mais tradicionais e respeitadas do setor cimenteiro nacional. Buscamos profissionais movidos por metas, relacionamento consultivo e presença em campo.
+          </p>
+
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a href="#candidatura" class="bg-caue-red hover:bg-caue-redHover text-white font-display font-bold px-7 py-3.5 rounded-xl transition-all shadow-lg shadow-caue-red/25 inline-flex items-center gap-2">
+              Enviar Currículo
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+            <a href="#atribuicoes" class="bg-white/10 hover:bg-white/15 text-white font-semibold px-6 py-3.5 rounded-xl border border-white/15 transition-all">
+              Detalhes da Vaga
+            </a>
+          </div>
+        </div>
+
+        <!-- Card Resumo da Posição -->
+        <div class="lg:col-span-5">
+          <div class="bg-white text-slate-800 rounded-2xl p-6 sm:p-8 shadow-2xl border border-slate-100">
+            <h2 class="font-display font-bold text-lg text-caue-navy border-b border-slate-100 pb-4 mb-5 flex items-center justify-between">
+              Resumo da Oportunidade
+              <span class="text-xs font-semibold bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-md">Aberta</span>
+            </h2>
+            
+            <dl class="space-y-4 text-sm">
+              <div class="flex items-start justify-between gap-4">
+                <dt class="text-slate-500 font-medium">Área de Atuação</dt>
+                <dd class="font-semibold text-slate-900 text-right">Comercial / Vendas Externas</dd>
+              </div>
+              <div class="flex items-start justify-between gap-4">
+                <dt class="text-slate-500 font-medium">Regime de Contratação</dt>
+                <dd class="font-semibold text-slate-900 text-right">CLT + Remuneração Variável</dd>
+              </div>
+              <div class="flex items-start justify-between gap-4">
+                <dt class="text-slate-500 font-medium">Modelo de Trabalho</dt>
+                <dd class="font-semibold text-slate-900 text-right">Presencial / Rota Regional</dd>
+              </div>
+              <div class="flex items-start justify-between gap-4">
+                <dt class="text-slate-500 font-medium">Carteira de Clientes</dt>
+                <dd class="font-semibold text-slate-900 text-right">Lojas de Materiais & Construtoras</dd>
+              </div>
+              <div class="flex items-start justify-between gap-4">
+                <dt class="text-slate-500 font-medium">Jornada</dt>
+                <dd class="font-semibold text-slate-900 text-right">Segunda a Sexta (Comercial)</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Atribuições -->
+  <section id="atribuicoes" class="py-16 lg:py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-2xl mb-12">
+      <span class="text-caue-red font-bold text-xs uppercase tracking-widest">Dia a Dia</span>
+      <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-caue-navy mt-1">
+        Principais Atribuições do Cargo
+      </h2>
+      <p class="text-slate-600 mt-3 text-sm sm:text-base">
+        Você será o elo estratégico entre a fábrica e os pontos de venda, garantindo abastecimento, giro de estoque e relacionamento de longo prazo.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-11 h-11 rounded-xl bg-caue-navy/10 text-caue-navy flex items-center justify-center mb-4">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+        </div>
+        <h3 class="font-display font-bold text-lg text-caue-navy mb-2">Prospecção & Expansão</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Mapear e abrir novos pontos de venda no varejo de materiais de construção, depósitos e construtoras regionais.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-11 h-11 rounded-xl bg-caue-red/10 text-caue-red flex items-center justify-center mb-4">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <h3 class="font-display font-bold text-lg text-caue-navy mb-2">Negociação Comercial</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Conduzir propostas de volume, prazos, condições de pagamento e mix de produtos (CP II, CP III, CP IV e CP V).
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-11 h-11 rounded-xl bg-caue-navy/10 text-caue-navy flex items-center justify-center mb-4">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+          </svg>
+        </div>
+        <h3 class="font-display font-bold text-lg text-caue-navy mb-2">Gestão de Metas</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Acompanhar indicadores de volume (toneladas), positivação de carteira, margem comercial e previsão de vendas no CRM.
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-11 h-11 rounded-xl bg-caue-red/10 text-caue-red flex items-center justify-center mb-4">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+          </svg>
+        </div>
+        <h3 class="font-display font-bold text-lg text-caue-navy mb-2">Pós-Venda & Merchandising</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Apoiar clientes na organização de estoque, ações de trade marketing no PDV e acompanhamento de entregas logísticas.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Requisitos e Benefícios -->
+  <section id="requisitos" class="bg-white border-y border-slate-200 py-16 lg:py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-16">
+      
+      <!-- Coluna Requisitos -->
+      <div>
+        <span class="text-caue-red font-bold text-xs uppercase tracking-widest">Perfil Buscado</span>
+        <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-caue-navy mt-1 mb-6">
+          Requisitos e Qualificações
+        </h2>
+        
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3.5">
+            <div class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div>
+              <strong class="text-slate-900 block text-sm sm:text-base">Experiência Comercial B2B</strong>
+              <span class="text-slate-600 text-sm">Vivência comprovada em vendas externas, preferencialmente nos segmentos de cimento, argamassa, aço ou materiais de construção.</span>
+            </div>
+          </li>
+
+          <li class="flex items-start gap-3.5">
+            <div class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div>
+              <strong class="text-slate-900 block text-sm sm:text-base">CNH Categoria B Ativa</strong>
+              <span class="text-slate-600 text-sm">Habilitação regular e disponibilidade para deslocamentos e viagens na região de atuação.</span>
+            </div>
+          </li>
+
+          <li class="flex items-start gap-3.5">
+            <div class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div>
+              <strong class="text-slate-900 block text-sm sm:text-base">Formação Acadêmica</strong>
+              <span class="text-slate-600 text-sm">Ensino Médio completo (Superior em Administração, Gestão Comercial ou Engenharia será considerado diferencial).</span>
+            </div>
+          </li>
+
+          <li class="flex items-start gap-3.5">
+            <div class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div>
+              <strong class="text-slate-900 block text-sm sm:text-base">Ferramentas Digitais</strong>
+              <span class="text-slate-600 text-sm">Facilidade com sistemas CRM, aplicativos de pedidos e Pacote Office (Excel básico/intermediário).</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Coluna Benefícios -->
+      <div id="beneficios">
+        <span class="text-caue-red font-bold text-xs uppercase tracking-widest">Pacote de Valor</span>
+        <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-caue-navy mt-1 mb-6">
+          O que Oferecemos
+        </h2>
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="p-4 rounded-xl bg-caue-concrete border border-slate-200/70">
+            <h3 class="font-display font-bold text-caue-navy text-sm">Remuneração Competitiva</h3>
+            <p class="text-xs text-slate-600 mt-1">Salário fixo compatível com o mercado + comissionamento atrativo por metas atingidas.</p>
+          </div>
+
+          <div class="p-4 rounded-xl bg-caue-concrete border border-slate-200/70">
+            <h3 class="font-display font-bold text-caue-navy text-sm">Mobilidade Corporativa</h3>
+            <p class="text-xs text-slate-6
